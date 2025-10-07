@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><span>Port</span>folio</a>
+
+        <nav class="navbar">
+            <a href="#"></a><i class='bx bx-home'></i> Home</a>
+            <a href="#"><i class='bx bx-user'></i> About me</a>
+            <a href="#"><i class='bx bx-book'></i> Education</a> 
+            <a href="#"><i class='bx bx-certification'></i> Certifications</a>
+        </nav>    
+    
+    <a href="mailto:surendragupta_bca24_27@its.edu.in" class="contact">Contact Me</a>
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <h1>Hello, I'm</h1>
+
+            <h2 style="color: blue;">Surendra Gupta</h2>
+            <h3><span id="typewriter-upper"></span></h3>
+            <p>This side Surendra Gupta and I have completed my Diploma in Computer Application, currently I am pursuing my BCA from @ITS College, Ghaziabad. 
+It is the one of the best college in Ghaziabad. I've  advanced level of coding skills by with the help of Professional Academic like one of the best faculty, mentors and also skillful friends.
+I've passion for Information Technology. I have many certification skills like AI & ML,Hackathon, and other certification skills.</p>
+
+            <div class="btn-box">
+                <button class="btn-1">Work with me</button>
+                <a href="Resume.jpg" download class="btn-2">Download CV</a>
+            </div>
+        </div>
+        <div class="img-box">
+            <img  src="PIC1.jpg" alt="Profile Picture" class="profile-pic">
+        </div>
+    </section>
+
+    <section class="about">
+        <img src="PIC1.jpg" alt=""> 
+        </div> 
+
+        <div class="about-content">
+            <h2 class ="heading">About <span>Me</span></h2>
+            <h3> <span id="typewriter"></span></h3>
+            <p>This side Surendra Gupta and I have completed my Diploma in Computer Application, currently I am pursuing my BCA from @ITS College, Ghaziabad. 
+It is the one of the best college in Ghaziabad. I've  advanced level of coding skills by with the help of Professional Academic like one of the best faculty, mentors and also skillful friends.
+I've passion for Information Technology. I have many certification skills like AI & ML,Hackathon, and other certification skills.</p>
+            <a href="#" class ="btn-2">Experience</a>
+        </div>
+    </section>
+    <div class="education">
+        <h1>Bachelor of Computer Applications<span>(BCA)</span></h1>
+        <h1>College: Institute of Technology & Science (2024-27)</h1>
+        <h1>Percentage:75</h1>
+    </div>    
+
+
+
+
+
+
+
+
+    <!-- ====== Certification Section ====== -->
+<section id="certification">
+  <h2>My Certifications</h2>
+  <div class="cert-container">
+
+    <!-- Certificate Card 1 -->
+    <div class="cert-card">
+      <img src="certificate1.jpg" alt="Certificate 1">
+      <h3>Fusing IoT, Generative AI & Engineering for Innovative Applications</h3>
+      <p><strong>Date:</strong> 17th & 18th February 2025</p>
+      <p><strong>Type:</strong>Workshop</p>
+    </div>
+
+    <!-- Certificate Card 2 -->
+    <div class="cert-card">
+      <img src="certificate2.jpg" alt="Certificate 2">
+      <h3>Game Development using Python</h3>
+      <p><strong>Date:</strong> 07th February 2025</p>
+      <p><strong>Type:</strong> Workshop</p>
+    </div>
+
+
+</section>
+    <section class="contact-form">
+        <h2 class="contact-me">Contact <span>Me</span></h2>
+
+        <form action="#">
+
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email"
+                placeholder="Email">
+            </div>
+
+            <div class="input-box">
+                <input type="Number" placeholder="Phone Number">
+                <input type="text"
+                placeholder="Subject">
+            </div>
+
+            <textarea name="" id="" cols="30"
+            rows="10" placeholder="Your Message"></textarea>
+            <input type ="submit" value="Send Message" 
+            class="btn-1">
+        </form>
+    </section>
+
+    <footer class="footer">
+
+        <div class="social">
+            <a href="mailto:surendragupta_bca24_27@its.edu.in"><i class='bx bxl-gmail'></i></a>
+            <a href="https://www.linkedin.com/in/surendragupta642"><i class='bx bxl-linkedin-square'></i></a>
+            <a href="https://wa.me/+918004172160"><i class='bx bxl-whatsapp'></i></a>
+            <a href="https://www.instagram.com/guptasurendra_?igsh=OWt5YTI3YzZ6bWd4" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+
+        </div>
+
+        <ul class="list">
+            <li>
+                <a href="#">FAQ</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+            <li>
+                <a href="#">About Me</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            <li>
+                <a href="#">Privacy Policy</a>
+            </li>
+        </ul>
+
+        <p class="copyright"></p>
+    </footer>
+    <!---->
+    <script>
+      function typeWriterEffect(elementId, text) {
+        const el = document.getElementById(elementId);
+        let i = 0;
+        let isErasing = false;
+        function typeEffect() {
+          if (!isErasing && i <= text.length) {
+            el.textContent = text.slice(0, i);
+            i++;
+            setTimeout(typeEffect, 120);
+          } else if (isErasing && i >= 0) {
+            el.textContent = text.slice(0, i);
+            i--;
+            setTimeout(typeEffect, 80);
+          } else {
+            isErasing = !isErasing;
+            setTimeout(typeEffect, 1000);
+          }
+        }
+        typeEffect();
+      }
+      typeWriterEffect("typewriter-upper", "Software Developer");
+      typeWriterEffect("typewriter", "Software Developer");
+    </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="javascript.js"></script>
+    
+
+
+
+
+</body>
+</html>
