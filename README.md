@@ -98,7 +98,7 @@ Portfolio/
 ### Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/portfolio.git
+https://github.com/errorsurendra/portfolio
 ```
 
 ### Open Project
@@ -140,17 +140,6 @@ This website is optimized for:
 - Tablet
 - Mobile Devices
 
----
-
-## 📷 Screenshots
-
-### Home Page
-
-> Add Screenshot Here
-
-### About Section
-
-> Add Screenshot Here
 
 ### Certifications
 
