@@ -2,9 +2,7 @@
 
 > A modern and responsive personal portfolio website developed using **HTML5** and **CSS3** to showcase my education, technical skills, projects, certifications, and contact information.
 
-![Portfolio](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![Responsive](https://img.shields.io/badge/Responsive-Website-success?style=for-the-badge)
+![Portfolio](https://lnkd.in/d5T7WK3C)
 
 ---
 
