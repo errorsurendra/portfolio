@@ -11,14 +11,15 @@
     <header class="header">
         <a href="#" class="logo"><span>Port</span>folio</a>
 
-        <nav class="navbar">
-            <a href="#"></a><i class='bx bx-home'></i> Home</a>
-            <a href="#"><i class='bx bx-user'></i> About me</a>
-            <a href="#"><i class='bx bx-book'></i> Education</a> 
-            <a href="#"><i class='bx bx-certification'></i> Certifications</a>
-        </nav>    
-    
-    <a href="mailto:surendragupta_bca24_27@its.edu.in" class="contact">Contact Me</a>
+        <nav class="navbar" id="navbar">
+            <a href="#" class="active">Home</a>
+            <a href="#about-me">About me</a>
+            <a href="#education">Education</a>
+            <a href="#">Projects</a>
+            <a href="#certification">Certifications</a>
+        </nav>
+        <button class="contact">Contact us</button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu"><i class='bx bx-menu'></i></button>
     </header>
     <section class="home">
         <div class="home-content">
@@ -40,9 +41,10 @@ I've passion for Information Technology. I have many certification skills like A
         </div>
     </section>
 
-    <section class="about">
-        <img src="PIC1.jpg" alt=""> 
-        </div> 
+    <section class="about" id="about-me">
+        <div class="about-img">
+            <img src="PIC1.jpg" alt="Surendra Gupta">
+        </div>
 
         <div class="about-content">
             <h2 class ="heading">About <span>Me</span></h2>
@@ -53,18 +55,11 @@ I've passion for Information Technology. I have many certification skills like A
             <a href="#" class ="btn-2">Experience</a>
         </div>
     </section>
-    <div class="education">
+    <div class="education" id="education">
         <h1>Bachelor of Computer Applications<span>(BCA)</span></h1>
         <h1>College: Institute of Technology & Science (2024-27)</h1>
         <h1>Percentage:75</h1>
     </div>    
-
-
-
-
-
-
-
 
     <!-- ====== Certification Section ====== -->
 <section id="certification">
@@ -87,7 +82,7 @@ I've passion for Information Technology. I have many certification skills like A
       <p><strong>Type:</strong> Workshop</p>
     </div>
 
-
+  </div>
 </section>
     <section class="contact-form">
         <h2 class="contact-me">Contact <span>Me</span></h2>
@@ -116,6 +111,7 @@ I've passion for Information Technology. I have many certification skills like A
     <footer class="footer">
 
         <div class="social">
+            <h3>Feel free to contact us</h3>
             <a href="mailto:surendragupta_bca24_27@its.edu.in"><i class='bx bxl-gmail'></i></a>
             <a href="https://www.linkedin.com/in/surendragupta642"><i class='bx bxl-linkedin-square'></i></a>
             <a href="https://wa.me/+918004172160"><i class='bx bxl-whatsapp'></i></a>
@@ -141,46 +137,23 @@ I've passion for Information Technology. I have many certification skills like A
             </li>
         </ul>
 
-        <p class="copyright"></p>
+        <p class="copyright">&copy; 2026 Surendra Gupta. All rights reserved.</p>
     </footer>
-    <!---->
+
     <script>
-      function typeWriterEffect(elementId, text) {
-        const el = document.getElementById(elementId);
-        let i = 0;
-        let isErasing = false;
-        function typeEffect() {
-          if (!isErasing && i <= text.length) {
-            el.textContent = text.slice(0, i);
-            i++;
-            setTimeout(typeEffect, 120);
-          } else if (isErasing && i >= 0) {
-            el.textContent = text.slice(0, i);
-            i--;
-            setTimeout(typeEffect, 80);
-          } else {
-            isErasing = !isErasing;
-            setTimeout(typeEffect, 1000);
-          }
-        }
-        typeEffect();
-      }
-      typeWriterEffect("typewriter-upper", "Software Developer");
-      typeWriterEffect("typewriter", "Software Developer");
+        const menuToggle = document.getElementById('menuToggle');
+        const navbar = document.getElementById('navbar');
+
+        menuToggle.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+
+        // Close the mobile menu after tapping a link
+        navbar.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navbar.classList.remove('active');
+            });
+        });
     </script>
-    
-    
-    
-    
-    
-    
-    
-    
-    <script src="javascript.js"></script>
-    
-
-
-
-
 </body>
 </html>
